@@ -1,0 +1,319 @@
+
+<script type="text/javascript">
+	atOptions = {
+		'key' : 'c9c3757d0ec91858e8c5d1c281d53912',
+		'format' : 'iframe',
+		'height' : 90,
+		'width' : 728,
+		'params' : {}
+	};
+</script>
+<script type="text/javascript" src="//www.highperformanceformat.com/c9c3757d0ec91858e8c5d1c281d53912/invoke.js"></script>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Durga Puja Celebration</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      height: 100vh;
+      overflow: hidden;
+      background: black;
+      font-family: 'Segoe UI', sans-serif;
+      color: white;
+    }
+    .landing, .main {
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      transition: opacity 1s ease;
+    }
+    .landing {
+      background: linear-gradient(270deg, #ff00ff, #00ffff, #ffff00);
+      background-size: 600% 600%;
+      animation: rainbow 10s ease infinite, zoom 6s ease-in-out infinite;
+    }
+    @keyframes rainbow {
+      0% {background-position: 0% 50%;}
+      50% {background-position: 100% 50%;}
+      100% {background-position: 0% 50%;}
+    }
+    @keyframes zoom {
+      0%, 100% {transform: scale(1);}
+      50% {transform: scale(1.05);}
+    }
+    .reveal-btn {
+      background: none;
+      border: 2px solid #fff;
+      padding: 15px 30px;
+      margin-top: 30px;
+      font-size: 1.2rem;
+      border-radius: 50px;
+      color: white;
+      cursor: pointer;
+      box-shadow: 0 0 10px #fff;
+      transition: all 0.3s;
+      animation: pulse 1.5s infinite;
+    }
+    .reveal-btn:hover {
+      box-shadow: 0 0 20px #00ffff;
+    }
+    @keyframes pulse {
+      0%, 100% {transform: scale(1);}
+      50% {transform: scale(1.1);}
+    }
+
+    .main {
+      background: linear-gradient(135deg, #1a0033, #000033);
+      opacity: 0;
+      pointer-events: none;
+    }
+    .main.show {
+      opacity: 1;
+      pointer-events: auto;
+    }
+    .celebrate-text {
+      font-size: 2rem;
+      margin: 10px 0;
+      animation: disco 3s linear infinite, blink 2s infinite;
+      background: linear-gradient(90deg, magenta, gold, cyan);
+      background-clip: text;
+      -webkit-background-clip: text;
+      color: transparent;
+    }
+    @keyframes disco {
+      0% {filter: hue-rotate(0deg);}
+      100% {filter: hue-rotate(360deg);}
+    }
+    @keyframes blink {
+      0%, 100% {opacity: 1;}
+      50% {opacity: 0.6;}
+    }
+    .rakhi-img {
+      width: 80%;
+      max-width: 400px;
+      border-radius: 20px;
+      box-shadow: 0 0 30px #ff00ff;
+      animation: zoom 6s ease-in-out infinite, shadowShift 10s linear infinite;
+    }
+    @keyframes shadowShift {
+      0% {box-shadow: 0 0 30px #ff00ff;}
+      50% {box-shadow: 0 0 30px #00ffff;}
+      100% {box-shadow: 0 0 30px #ff00ff;}
+    }
+    .greet {
+      margin-top: 20px;
+      font-size: 1.5rem;
+      padding: 10px;
+      background: linear-gradient(to right, #ff00ff66, #00ffff66);
+      border-radius: 15px;
+      animation: zoom 5s infinite;
+    }
+    .highlight {
+      color: #00ffff;
+      animation: blink 2s infinite, disco 5s infinite;
+      font-weight: bold;
+    }
+
+    .inputs {
+      margin-top: 20px;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+    .inputs input, .inputs textarea {
+      padding: 10px;
+      background: #111;
+      border: 2px solid #0ff;
+      border-radius: 10px;
+      color: white;
+      width: 80vw;
+      max-width: 400px;
+      resize: none;
+    }
+    .gift-button {
+      display: inline-block;
+      background: linear-gradient(45deg, #ff69b4, #ff1493);
+      padding: 12px 20px;
+      margin-top: 20px;
+      border-radius: 25px;
+      font-size: 1.2rem;
+      color: white;
+      text-decoration: none;
+      box-shadow: 0 0 10px #ff1493;
+      animation: bounce 2s infinite, glow 3s infinite;
+    }
+    @keyframes bounce {
+      0%, 100% {transform: translateY(0);}
+      50% {transform: translateY(-10px);}
+    }
+    @keyframes glow {
+      0%, 100% {box-shadow: 0 0 10px #ff69b4;}
+      50% {box-shadow: 0 0 20px #ff1493;}
+    }
+    .whatsapp {
+      margin-top: 15px;
+      background: #25D366;
+      color: white;
+      padding: 10px 20px;
+      border-radius: 40px;
+      display: inline-flex;
+      align-items: center;
+      font-weight: bold;
+      box-shadow: 0 0 10px #25D366;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+    .whatsapp:hover {
+      box-shadow: 0 0 20px #25D366;
+    }
+    .whatsapp img {
+      width: 20px;
+      margin-right: 10px;
+    }
+
+    /* Flower fall + balloon */
+    .falling {
+      position: absolute;
+      pointer-events: none;
+      font-size: 24px;
+      animation: fall 5s linear infinite;
+    }
+    @keyframes fall {
+      0% {transform: translateY(-10%);}
+      100% {transform: translateY(110vh) rotate(360deg);}
+    }
+  </style>
+</head>
+<body>
+
+<!-- Landing Screen -->
+<div class="landing" id="landing">
+  <h1>Special Durga Puja message waiting for you</h1>
+  <button class="reveal-btn" onclick="startCelebration()">Click to Reveal</button>
+</div>
+
+<!-- Main Celebration Screen -->
+<div class="main" id="main">
+  <h2 class="celebrate-text">🎉 Happy Durga Puja 🎉</h2>
+  <img src="rakhi.gif" alt="Rakhi" class="rakhi-img">
+  <div class="greet" id="greeting">
+    <span class="highlight" id="name">Someone</span> ki taraf se: <span id="message">aapko Dunga puja ki bahut bahut badhai</span>
+  </div>
+  <div class="inputs">
+    <input type="text" id="nameInput" placeholder="Enter your name">
+    <textarea id="msgInput" placeholder="Type your message" rows="2"></textarea>
+  </div>
+
+  <!-- 🔥🔥 PASTE YOUR AMAZON AFFILIATE LINK BELOW 🔥🔥 -->
+  <a href="https://amzn.to/3UPiRQ8" target="_blank" class="gift-button">🎁 Special Puja Gifts 🎁 👇</a>
+
+  <div class="whatsapp" onclick="shareWhatsApp()">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="wa"> Share on WhatsApp
+  </div>
+</div>
+
+<audio id="music" loop>
+  <source src="rakhi.mp3" type="audio/mpeg">
+</audio>
+
+<script>
+  const url = new URLSearchParams(window.location.search);
+  const defaultName = "Someone";
+  const defaultMsg = "aapko Dunga puja ki bahut bahut badhai";
+
+  const nameParam = url.get("name") || "";
+  const msgParam = url.get("msg") || "";
+
+  const nameEl = document.getElementById('name');
+  const msgEl = document.getElementById('message');
+  const nameInput = document.getElementById('nameInput');
+  const msgInput = document.getElementById('msgInput');
+
+  if (nameParam) {
+    nameEl.textContent = decodeURIComponent(nameParam);
+    nameInput.value = decodeURIComponent(nameParam);
+  }
+  if (msgParam) {
+    msgEl.textContent = decodeURIComponent(msgParam);
+    msgInput.value = decodeURIComponent(msgParam);
+  }
+
+  nameInput.oninput = () => nameEl.textContent = nameInput.value || defaultName;
+  msgInput.oninput = () => msgEl.textContent = msgInput.value || defaultMsg;
+
+  function startCelebration() {
+    document.getElementById('landing').style.opacity = 0;
+    document.getElementById('main').classList.add('show');
+    document.getElementById('music').play();
+    launchConfetti();
+    setInterval(flowerFall, 800);
+    setInterval(balloonFall, 1500);
+  }
+
+  function shareWhatsApp() {
+    const name = encodeURIComponent(nameInput.value || defaultName);
+    const msg = encodeURIComponent(msgInput.value || defaultMsg);
+    const url = `${location.origin + location.pathname}?name=${name}&msg=${msg}`;
+    const waMsg = `${decodeURIComponent(name)} ki taraf se: ${decodeURIComponent(msg)}\n${url}`;
+    window.open(`https://wa.me/?text=${encodeURIComponent(waMsg)}`, '_blank');
+  }
+
+  function launchConfetti() {
+    const emojis = ['🌟','🎇','🎆','✨','💥'];
+    for (let i = 0; i < 20; i++) {
+      const el = document.createElement('div');
+      el.className = 'falling';
+      el.textContent = emojis[Math.floor(Math.random() * emojis.length)];
+      el.style.left = Math.random() * 100 + 'vw';
+      el.style.animationDuration = (Math.random() * 2 + 3) + 's';
+      document.body.appendChild(el);
+      setTimeout(() => el.remove(), 6000);
+    }
+  }
+
+  function flowerFall() {
+    const flowers = ['🌺','💐','🥀','🌹','🌸','🌼','🌻','🌈'];
+    const el = document.createElement('div');
+    el.className = 'falling';
+    el.textContent = flowers[Math.floor(Math.random() * flowers.length)];
+    el.style.left = Math.random() * 100 + 'vw';
+    el.style.animationDuration = (Math.random() * 2 + 3) + 's';
+    el.style.fontSize = (Math.random() * 20 + 24) + 'px';
+    document.body.appendChild(el);
+    setTimeout(() => el.remove(), 6000);
+  }
+
+  function balloonFall() {
+    const colors = ['#0ff', '#f0f', '#ff0', '#0f0'];
+    const el = document.createElement('div');
+    el.className = 'falling';
+    el.textContent = '🎈';
+    el.style.left = Math.random() * 100 + 'vw';
+    el.style.color = colors[Math.floor(Math.random() * colors.length)];
+    el.style.fontSize = (Math.random() * 15 + 30) + 'px';
+    el.style.animationDuration = (Math.random() * 3 + 4) + 's';
+    document.body.appendChild(el);
+    setTimeout(() => el.remove(), 6000);
+  }
+</script>
+</body>
+</html>
+<script type="text/javascript">
+	atOptions = {
+		'key' : 'c9c3757d0ec91858e8c5d1c281d53912',
+		'format' : 'iframe',
+		'height' : 90,
+		'width' : 728,
+		'params' : {}
+	};
+</script>
+<script type="text/javascript" src="//www.highperformanceformat.com/c9c3757d0ec91858e8c5d1c281d53912/invoke.js"></script>
